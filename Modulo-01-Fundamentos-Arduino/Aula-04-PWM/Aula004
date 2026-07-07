@@ -1,0 +1,63 @@
+void setup() {
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  Serial.println("A frequência é de: 0 Hz");
+  {
+    tone(6, 0);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 100 Hz");
+  {
+    tone(6, 100);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 200 Hz");
+  {
+    tone(6, 200);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 300 Hz");
+  {
+    tone(6, 300);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 400 Hz");
+  {
+    tone(6, 400);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 500 Hz");
+  {
+    tone(6, 500);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 600 Hz");
+  {
+    tone(6, 600);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 700 Hz");
+  {
+    tone(6, 700);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 800 Hz");
+  {
+    tone(6, 800);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 900 Hz");
+  {
+    tone(6, 900);
+    delay(2000);
+  }
+  Serial.println("A frequência é de: 980 Hz");
+  {
+    tone(6, 980);
+    delay(2000);
+  }
+
+}
