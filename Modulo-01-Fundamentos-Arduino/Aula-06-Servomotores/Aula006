@@ -1,0 +1,29 @@
+#include <Servo.h>
+
+#define LedVermelho 13
+#define LedAzul 12
+#define btn 3
+
+Servo servo_7;
+
+void setup() {
+  pinMode(btn, INPUT_PULLUP);
+  servo_7.attach(7);
+  pinMode(LedVermelho, OUTPUT);
+  pinMode(LedAzul, OUTPUT);
+
+}
+
+void loop() {
+  if(digitalRead(btn) == 1) {
+    servo_7.write(90);
+    digitalWrite(LedVermelho, LOW);
+    digitalWrite(LedAzul, HIGH);
+  }
+  else {
+    servo_7.write(180);
+    digitalWrite(LedVermelho, HIGH);
+    digitalWrite(LedAzul, LOW);
+  }
+
+}
