@@ -1,0 +1,18 @@
+#include <Servo.h>
+
+Servo servo_aula;
+
+void setup() {
+  servo_aula.attach(5);
+  Serial.begin(9600);  
+
+}
+
+void loop() {
+  int angle = analogRead(0);
+  angle = map(angle, 0, 1023, 0, 180);
+  servo_aula.write(angle);
+  Serial.println(angle);
+  delay(150);  
+
+}
