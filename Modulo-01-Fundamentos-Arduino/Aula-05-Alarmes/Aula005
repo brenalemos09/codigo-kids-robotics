@@ -1,0 +1,28 @@
+#define buzzer 9
+#define flame A0
+
+void setup() {
+
+  pinMode(buzzer, OUTPUT);
+  pinMode(flame, INPUT);
+  Serial.begin(9600);
+  Serial.print("ALARME LIGADO!");
+
+}
+
+void loop() {
+  int sensor = analogRead(flame);
+
+  if(sensor > 20) {
+    Serial.print("FOGO!!!");
+    digitalWrite(buzzer, HIGH);
+    delay(500);
+    digitalWrite(buzzer, LOW);
+    delay(500);
+  }
+  else {
+    Serial.println("Alarme Ativo...");
+    digitalWrite(buzzer, LOW);
+  }
+
+}
