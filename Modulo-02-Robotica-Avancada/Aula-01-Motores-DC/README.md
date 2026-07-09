@@ -1,97 +1,56 @@
-# Aula 01 — Motores DC
+# Módulo 02 — Robótica Avançada
 
-## Objetivo
+## Sobre este módulo
 
-Aprender a controlar a velocidade de um motor de corrente contínua (Motor DC) utilizando PWM (Pulse Width Modulation), compreendendo o funcionamento de drivers de potência e o controle proporcional de velocidade.
+Neste módulo são explorados conceitos avançados de robótica utilizando Arduino, com foco no desenvolvimento de robôs móveis, controle de motores, automação, sensores inteligentes e sistemas embarcados.
 
-Nesta aula foi desenvolvido um sistema onde um potenciômetro controla, em tempo real, a velocidade de rotação de um motor DC.
+Ao longo das aulas, são desenvolvidos projetos que simulam aplicações reais encontradas na indústria, robótica educacional e Internet das Coisas (IoT), proporcionando experiência prática na integração entre hardware e software.
 
 ---
 
-## Conteúdos estudados
+## Competências desenvolvidas
 
-- Motores DC
+- Controle de motores DC
+- Ponte H (Driver de Motores)
 - Controle PWM
-- Ponte H (Driver de Motor)
-- Entradas analógicas
-- Função `analogRead()`
-- Função `analogWrite()`
-- Função `map()`
-- Comunicação Serial
+- Robótica móvel
+- Controle de velocidade
+- Sensores ultrassônicos
+- Sensores magnéticos
+- Sensores sonoros
+- Energia solar
+- Bluetooth
+- Joystick
+- Automação industrial
+- Navegação autônoma
+- Desvio de obstáculos
+- Desenvolvimento de robôs inteligentes
 
 ---
 
-## Componentes utilizados
+## Estrutura
 
-- Arduino Uno
-- Motor DC
-- Driver de Motor (Ponte H)
-- Potenciômetro
-- Protoboard
-- Jumpers
-- Fonte de alimentação
-- Cabo USB
-
----
-
-## Projeto desenvolvido
-
-### Controle de Velocidade de Motor DC
-
-Foi desenvolvido um controlador de velocidade para um motor DC.
-
-O sistema realiza continuamente a leitura da posição de um potenciômetro e converte o valor analógico (0–1023) para um nível de PWM (0–255) utilizando a função `map()`.
-
-Esse valor é aplicado ao driver do motor por meio da função `analogWrite()`, permitindo controlar suavemente a velocidade de rotação do motor.
-
-Durante a execução, os valores de PWM são exibidos no Monitor Serial para facilitar o acompanhamento do funcionamento do sistema.
+```text
+Modulo-02-Robotica-Avancada/
+├── Aula-01-Motores-DC/
+├── Aula-02-Carro-de-Teste/
+├── ...
+└── Aula-20-Carro-Bluetooth/
+```
 
 ---
 
 ## Tecnologias utilizadas
 
-- Arduino IDE
-- Linguagem C/C++
 - Arduino Uno
-
----
-
-## Estrutura dos arquivos
-
-```text
-Aula-01-Motores-DC/
-├── README.md
-└── Aula001.ino
-```
-
----
-
-## Aprendizados
-
-Ao concluir esta aula, foram desenvolvidas as seguintes competências:
-
-- Controle de motores DC utilizando PWM
-- Utilização da função `map()`
-- Conversão de sinais analógicos
-- Controle proporcional de velocidade
-- Integração entre potenciômetro e motor
-- Comunicação Serial para monitoramento
-- Utilização de drivers de motores (Ponte H)
-
----
-
-## Aplicações práticas
-
-Os conceitos desta aula são utilizados em:
-
-- Robôs móveis
-- Esteiras industriais
-- Ventiladores inteligentes
-- Bombas de água
-- Automação industrial
-- Veículos autônomos
-- Sistemas embarcados
-- Internet das Coisas (IoT)
+- Linguagem C/C++
+- Arduino IDE
+- Ponte H
+- Motores DC
+- PWM
+- Sensores eletrônicos
+- Bluetooth
+- Robótica móvel
 
 ---
 
